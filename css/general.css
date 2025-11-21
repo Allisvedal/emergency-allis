@@ -9,7 +9,7 @@ header {
 }
 
 #main-disclamer {
-  height: 225px;
+  height: 200px;
   background-color: var(--color-head-bg);
   display: flex;
   justify-content: flex-start;
@@ -32,10 +32,10 @@ main section {
 h1 {
   font-size: var(--font-h1-size);
   font-weight: var(--font-weight-bold);
-  color: var(--color-text-inverted);
-  margin: 5px 0;
+  color: black;
+  margin: 100px 0;
   line-height: 1.3rem;
-  text-align: left;
+  text-align: center;
 }
 
 #instruction h1,
@@ -67,12 +67,12 @@ h3 {
   font-size: var(--headline3-size);
 }
 
-main>h1 {
+main > h1 {
   width: calc(80% - 6rem);
 }
 
 /* NAVIGATION STRUCTURES */
-header>nav {
+header > nav {
   height: 100%;
   background-color: var(--color-menu-bg);
 }
@@ -99,7 +99,7 @@ nav a {
   height: 3.6rem;
 }
 
-#logotype-wrapper>a {
+#logotype-wrapper > a {
   color: var(--color-text-logotype);
   font-size: var(--font-logotype-size);
   font-weight: var(--font-weight-medium);
@@ -118,7 +118,7 @@ header nav li a {
 }
 
 /* Pilen efter menu-tekst */
-header>nav li>a:after {
+header > nav li > a:after {
   content: " \2192";
 }
 

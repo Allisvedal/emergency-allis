@@ -14,7 +14,7 @@
   line-height: 3rem;
   text-align: center;
   background-color: var(--color-headline-bg);
-  color: var(--color-headline-text-page);
+  color: blanchedalmond;
   margin-bottom: 1rem;
 }
 .info-text h3 {
@@ -40,3 +40,19 @@
 .info-box:nth-of-type(2n) {
   background-color: var(--color-infobox-2-bg);
 }
+
+/*genser, bukse og vaskemaskin*/
+.my_scale {
+  transform: scale(1.8);
+  transition: transform 2s;
+  transform-box: fill-box;
+  transform-origin: 50% 50%;
+}
+
+/*info-bokser*/
+/* #efficiency.info-box {
+  transform: scale(1.8);
+  transition: transform 2s;
+  transform-box: fill-box;
+  transform-origin: 50% 50%;
+} */

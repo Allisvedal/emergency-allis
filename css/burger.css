@@ -41,6 +41,7 @@
     transform: rotate(-45deg) translate(5px, -5px);
     transition: 0.2s linear;
   }
+  /*
   nav.active .menu {
     display: block;
     background-color: var(--color-menu-bg);
@@ -61,4 +62,49 @@
   nav.active .menu a {
     font-size: 24px;
   }
+    */
+}
+
+footer {
+  background-color: #f0bba4;
+  color: #333;
+  padding: 20px;
+  width: 100%;
+}
+
+.footer-container {
+  display: flex;
+  align-items: flex-start;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-links p {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.footer-links ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-links li {
+  margin-bottom: 5px;
+  font-size: 0.9rem;
+}
+
+.footer-mail {
+  display: flex;
+  align-items: left;
+  gap: 10px; /* Avstand mellom "MAIL:" og input-feltet */
+}
+
+#email-input {
+  /* Styling for å matche den hvite boksen i bildet */
+  background-color: white;
+  border: 1px solid #ccc;
+  padding: 8px;
+  width: 150px;
 }

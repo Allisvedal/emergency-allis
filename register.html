@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <link rel="icon" type="svg" href="SVG/favicon.svg" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/reset.css" />
@@ -11,7 +12,8 @@
     <link rel="stylesheet" href="css/layout.css" />
     <link rel="stylesheet" href="css/burger.css" />
     <link rel="stylesheet" href="css/cards.css" />
-    <link rel="stylesheet" href="css/form.css" />
+    <!-- <link rel="stylesheet" href="css/form.css" />-->
+    <link rel="stylesheet" href="css/index.css" />
     <link rel="icon" type="image/png" href="img/fav.png" />
     <title>Emergency Site</title>
   </head>
@@ -35,47 +37,119 @@
 
     <main>
       <h1>INDBERET</h1>
-      <section id="form-section">
-        <article id="form-info">
-          <h2>Overskrift</h2>
-          <p>Tekst</p>
-        </article>
-        <form id="webform"></form>
+
+      <!--
+      <section class="innhold-wrapper">
+        <section class="flekker-valg-container">
+          <div id="flekk-valg-boks"></div>
+          <button id="neste-knapp" disabled>Neste</button>
+        </section>
+        <div id="instruksjons-boks">
+          <h2 id="intruksjons-tittel"></h2>
+          <div id="intruksjons-innhold"></div>
+          <button id="tilbake-knapp" style="display: none">
+            Tilbake til flekkvalg
+          </button>
+        </div>
+      </section> -->
+
+      <section class="innhold-wrapper">
+        <section class="flekker-valg-container">
+          <div id="flekk-valg-boks"></div>
+          <button id="neste-knapp" disabled>Neste</button>
+        </section>
+        <div id="instruksjons-boks" style="display: none">
+          <h2 id="instruksjons-tittel"></h2>
+          <div id="instruksjons-innhold"></div>
+          <button id="tilbake-knapp">Tilbake til flekkvalg</button>
+        </div>
       </section>
-      <section id="form-summary">
-        <h2>Summary</h2>
-        <article>
-          <p class="placeholder">Opsummering</p>
-        </article>
+      <!--
+      <section class="flekker-valg">
+        <div class="flekk-valg-boks">
+          <input type="checkbox" id="2" />
+          <label class="tittel">Spilt på tøy</label>
+        </div>
+      </section>-->
+
+      <!--register check-box -->
+
+      <!--
+      <section class="flekker-valg-container">
+        <div id="flekk-valg-boks">
+
+
+          <label for="input-olje">
+            <input
+              type="checkbox"
+              id="input-olje"
+              name="flekk-valg"
+              value="oljeflekker"
+            />
+            Oljeflekker
+          </label>
+          <label for="input-rødvin">
+            <input
+              type="checkbox"
+              id="input-rødvin"
+              name="flekk-valg"
+              value="rødvinsflekker"
+            />
+            Rødvinsflekker
+          </label>
+          <label for="input-grønske">
+            <input
+              type="checkbox"
+              id="input-grønske"
+              name="flekk-valg"
+              value="grønske"
+            />
+            Grønske
+          </label>
+          <label for="input-matflekker">
+            <input
+              type="checkbox"
+              id="input-matflekker"
+              name="flekk-valg"
+              value="matflekker"
+            />
+            Matflekker
+          </label>
+        </div>
+        <button id="neste-knapp" disabled>Neste</button>
       </section>
+    -->
+      <div id="instruksjons-boks" style="display: none">
+        <h2 id="instruksjons-tittel"></h2>
+        <div id="instruksjons-innhold"></div>
+
+        <button id="tilbake-knapp">Tilbake til flekkvalg</button>
+      </div>
+      <!--slutt-->
     </main>
+
     <footer>
-      <nav class="some">
-        <ul>
-          <li><a href="">link</a></li>
-          <li><a href="">link</a></li>
-          <li><a href="">link</a></li>
-          <li><a href="">link</a></li>
-        </ul>
-      </nav>
-      <nav class="another">
-        <ul>
-          <li><a href="">link</a></li>
-          <li><a href="">link</a></li>
-          <li><a href="">link</a></li>
-          <li><a href="">link</a></li>
-        </ul>
-      </nav>
-      <nav class="yetanother">
-        <ul>
-          <li><a href="">link</a></li>
-          <li><a href="">link</a></li>
-          <li><a href="">link</a></li>
-          <li><a href="">link</a></li>
-        </ul>
-      </nav>
+      <div class="footer-container">
+        <div class="footer-links">
+          <p>KONTAKT OSS</p>
+          <ul>
+            <li>ADMINISTRASJON</li>
+            <li>LEDELSE</li>
+            <li>ADRESSE</li>
+            <li>MAIL</li>
+          </ul>
+        </div>
+        <div class="footer-mail">
+          <label for="email-input">MAIL:</label>
+          <input
+            type="email"
+            id="email-input"
+            placeholder="Din e-postadresse"
+          />
+        </div>
+      </div>
     </footer>
     <script src="js/burger.js"></script>
-    <!-- <script src="js/main.js"></script> -->
+    <script src="js/register.js"></script>
   </body>
 </html>

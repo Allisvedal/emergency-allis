@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <link rel="icon" type="svg" href="SVG/favicon.svg" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/reset.css" />
@@ -11,6 +12,7 @@
     <link rel="stylesheet" href="css/layout.css" />
     <link rel="stylesheet" href="css/burger.css" />
     <link rel="stylesheet" href="css/cards.css" />
+    <link rel="stylesheet" href="css/index.css" />
     <link rel="icon" type="image/png" href="img/fav.png" />
     <title>Emergency Site</title>
   </head>
@@ -18,7 +20,7 @@
     <header>
       <nav>
         <div id="logotype-wrapper" class="logo">
-          <a href="index.html"> LOGO-TYPE </a>
+          <a href="index.html"> SPILT PÅ TØY KRISEN </a>
         </div>
         <ul class="menu">
           <li><a class="menuItem" href="instruction.html">Nærkontakt </a></li>
@@ -33,86 +35,140 @@
     </header>
     <section id="main-disclamer">
       <div id="main-disclamer-content">
-        <img src="warning" alt="ICON" />
+        <img src="SVG/spilt-på-tøy.svg" alt="SVG" />
         <div>
-          <h1>OVERSKRIFT</h1>
-          <p class="sub">Underrubrik</p>
+          <h1>Å NEI EN PLET</h1>
+          <p class="sub">Mit tøy bliver ødelagt</p>
         </div>
       </div>
     </section>
     <main>
       <section id="daily">
         <article class="daily_card">
-          <img src="" alt="teaser_img" />
+          <img src="img/rødvinsflekk.png" />
           <div class="daily_text">
-            <h2>Teaser</h2>
+            <h2>De første minutter efter spillet</h2>
+
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat
-              magnam ducimus ea, sed minima asperiores.
+              Hvert sekund efter pleten har truffet tøyet er kritisk, jo
+              tidligere du fjerner pleten, jo mer sansynlig er det at du får
+              fjernet pleten.
             </p>
-            <a href="" class="cta_btn">Se mere</a>
+            <a href="instruction.html" class="cta_btn">Se mere</a>
           </div>
         </article>
         <article class="daily_card">
-          <img src="" alt="teaser_img" />
+          <img src="img/skittentøyskurv.png" alt="teaser_img" />
           <div class="daily_text">
-            <h2>Teaser</h2>
+            <h2>
+              Ulike pleter trenger ulik behandling, og kan gi ulike problemer.
+            </h2>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat
-              magnam ducimus ea, sed minima asperiores.
+              En rødvins-plet vil trenge en annen måte å fjernes på, enn en
+              grønsk plet. En olje-plet vil være hardere å fjerne, enn en
+              mat-plet.
             </p>
-            <a href="" class="cta_btn">Se mere</a>
+            <a href="register.html" class="cta_btn">Se mere</a>
           </div>
         </article>
       </section>
       <section id="breaking">
         <article class="news_card">
-          <h3>Nyhed</h3>
-          <p>Lorem ipsum dolor sit, sed minima asperiores.</p>
-          <img src="" alt="news_img" />
-          <a class="cta_btn" href="">Læs mere</a>
+          <h3>Ulike midler, og vaskemaskins-program</h3>
+          <img src="img/vaskemiddel.png" alt="news_img" />
+          <button class="cta_btn" popovertarget="pop01">Les mer</button>
+          <div id="news_popover" popover>
+            <button popovertarget="news_popover">Luk</button>
+            <h4>.....</h4>
+            <time class="newsDate">Skrevet 15/11/25</time>
+            <img src="img/vaskemiddel.png" />
+            <p>
+              På dagnes marked finnes det mange ulike produkter som skal hjelpe
+              dig med å fjerne pleter, men hva fungerer egentlig? Er den
+              gameldagse måten med såpe, vann og vaskemaskin den beste?
+            </p>
+          </div>
         </article>
         <article class="news_card">
-          <h3>Nyhed</h3>
-          <p>Lorem ipsum dolor sit, sed minima asperiores.</p>
-          <img src="" alt="news_img" />
-          <a class="cta_btn" href="">Læs mere</a>
+          <h3>Guide til plet-typer</h3>
+          <div id="news_popover" popover>
+            <button popovertarget="news_popover">Luk</button>
+            <h4>.....</h4>
+            <time class="newsDate">Skrevet 15/11/25</time>
+            <img src="img/guide til plet.png" />
+            <p>
+              Rødvin – kaldt vann + salt eller hvitvin. Olje – oppvaskmiddel og
+              varmt vann. Grønske – sitronsaft + sollys. Blod – kaldt vann og
+              hydrogenperoksid. Kaffe/te – eddik og natron.
+            </p>
+          </div>
+
+          <img src="img/guide til plet.png" alt="news_img" />
+          <button class="cta_btn" popovertarget="pop01">Les mer</button>
         </article>
         <article class="news_card">
-          <h3>Nyhed</h3>
-          <p>Lorem ipsum dolor sit, sed minima asperiores.</p>
-          <img src="" alt="news_img" />
-          <a class="cta_btn" href="">Læs mere</a>
+          <h3>NanoClean X-9</h3>
+          <div id="news_popover" popover>
+            <button popovertarget="news_popover">Luk</button>
+            <h4>.....</h4>
+            <time class="newsDate">Skrevet 15/11/25</time>
+            <img src="i" />
+            <p>
+          <p>
+            Krystallklar Klespleie Glem aggressive kjemikalier. NanoClean X-9
+            inneholder millionvis av "Smarte Enzymer" – mikroskopiske roboter
+            som låses til den nøyaktige molekylære signaturen til flekken (olje,
+            vin, blod, etc.) og løser den opp i gassform før den rekker å binde
+            seg permanent til stoffet. Resultatet? Perfekt rene klær uten
+            slitasje. Det er som å ha et kjemisk laboratorium i hver vask. Trygt
+            for miljøet og drepende for flekker. Eksklusivt designet for
+            smart-vaskemaskiner.
+          </p>
+          <img src="img/fantasi-vaskemiddel.png" alt="news_img" />
+          <button class="cta_btn" popovertarget="pop01">Les mer</button>
         </article>
       </section>
     </main>
 
-    <footer>
-      <nav class="some">
-        <ul>
-          <li><a href="">link</a></li>
-          <li><a href="">link</a></li>
-          <li><a href="">link</a></li>
-          <li><a href="">link</a></li>
-        </ul>
-      </nav>
-      <nav class="another">
-        <ul>
-          <li><a href="">link</a></li>
-          <li><a href="">link</a></li>
-          <li><a href="">link</a></li>
-          <li><a href="">link</a></li>
-        </ul>
-      </nav>
-      <nav class="yetanother">
-        <ul>
-          <li><a href="">link</a></li>
-          <li><a href="">link</a></li>
-          <li><a href="">link</a></li>
-          <li><a href="">link</a></li>
-        </ul>
-      </nav>
+   <footer>
+      <div class="footer-container">
+        <div class="footer-links">
+          <p>KONTAKT OSS</p>
+          <ul>
+            <li>ADMINISTRASJON</li>
+            <li>LEDELSE</li>
+            <li>ADRESSE</li>
+            <li>MAIL</li>
+          </ul>
+        </div>
+        <div class="footer-mail">
+          <label for="email-input">MAIL:</label>
+          <input
+            type="email"
+            id="email-input"
+            placeholder="Din e-postadresse"
+          />
+        </div>
+      </div>
     </footer>
+
+    <article popover id="pop01" class="popover-card">
+      <p><strong>Plet</strong></p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima,
+        laudantium nam deleniti sint fugit cum totam suscipit porro asperiores
+        voluptatem architecto esse. Nulla perferendis aliquid, eum officia
+        similique ratione distinctio!
+      </p>
+      <p>
+        <strong
+          >Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis
+          sunt similique doloribus laborum molestias corrupti perferendis, vel,
+          in non dolorem id aliquam nostrum sit animi. Hic, sed laboriosam.
+          Illum, recusandae!</strong
+        >
+      </p>
+    </article>
     <script src="js/burger.js"></script>
     <!-- <script src="js/main.js"></script> -->
   </body>

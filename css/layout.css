@@ -82,3 +82,116 @@ footer ul {
     grid-template-columns: 1fr 1fr 1fr;
   }
 }
+
+/* ----------------------------------- */
+/* Spesifikk Styling for Register/Flekkvalg */
+/* ----------------------------------- */
+
+/* Styling for selve sjekkboks-etikettene */
+label:has(input[type="checkbox"]) {
+  display: flex;
+  align-items: center;
+  gap: 0.75ch;
+  border: 1px solid #ccc;
+  padding: 0.5rem 0.75rem;
+  margin-bottom: 0.5rem;
+  background-color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Styling for når en sjekkboks er valgt */
+label:has(input[type="checkbox"]):has(input:checked) {
+  background-color: #e6f7ff; /* Lysblå bakgrunn for valgt */
+  border-color: #1890ff; /* Blå kant for valgt */
+  font-weight: bold;
+}
+
+/* Styling for 'Neste'-knappen */
+#neste-knapp {
+  /* Gir knappen litt størrelse og stil */
+  display: block;
+  width: 100%;
+  padding: 0.75rem;
+  margin-top: 1rem;
+  background-color: #4a90e2; /* En standard knappfarge */
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.2s;
+}
+
+#neste-knapp:hover:not(:disabled) {
+  background-color: #3b7ad6;
+}
+
+/* Deaktivert tilstand */
+#neste-knapp:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+/* ----------------------------------- */
+/* Styling for Instruksjonsboksen (Flytende) */
+/* ----------------------------------- */
+
+#instruksjons-boks {
+  /* Sentrering og flytende effekt */
+  position: fixed; /* Ligger over annet innhold */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Sentrerer boksen perfekt */
+  z-index: 1000; /* Sikrer at den ligger foran alt annet */
+
+  /* Utseende */
+  background-color: #f7f7f7; /* Lys grå/hvit bakgrunn */
+  color: #333;
+  padding: 2.5rem 3rem;
+  width: 90%;
+  max-width: 500px; /* Maks bredde på boksen */
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  text-align: left;
+}
+
+#instruksjons-boks h2 {
+  font-size: 1.8rem;
+  color: #7f3e12; /* Farge basert på din tidligere preferanse */
+  text-align: center;
+  margin-bottom: 1.5rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid #ddd;
+}
+
+/* Styling for steg-listen */
+#instruksjons-innhold strong {
+  color: #7f3e12;
+  display: block;
+  margin-top: 1rem;
+}
+
+#instruksjons-innhold p {
+  line-height: 1.5;
+  margin-bottom: 0.5rem;
+}
+
+/* Styling for TILBAKE-knappen */
+#tilbake-knapp {
+  display: block;
+  width: 100%;
+  padding: 0.75rem;
+  margin-top: 2rem;
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.2s;
+}
+
+#tilbake-knapp:hover {
+  background-color: #555;
+}

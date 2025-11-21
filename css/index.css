@@ -1,0 +1,49 @@
+#main-disclamer-content img {
+  /* Sikrer at bildet aldri blir større enn div-en */
+  max-width: 100%;
+
+  /* Sikrer at høyden justeres automatisk for å beholde proporsjonene */
+  height: auto;
+
+  /* Hvis du ønsker at bildet skal fylle en spesifikk bredde av diven, f.eks. 80%: */
+  width: 50%;
+
+  /* Hvis du vil sentrere bildet inne i diven (hvis bildet er smalere enn 100%): */
+  display: block; /* Må være blokk for å kunne sentreres */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+article[popover]::backdrop {
+  backdrop-filter: blur(8px);
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+[popover] {
+  max-height: 90vh;
+  max-width: 50ch;
+  width: 90vw;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+#pop01 p {
+  margin-block: 1rem; /*gir luft over og under hver p*/
+  line-height: 1.6; /*litt mer linjeavstand*/
+}
+
+#pop01 ul,
+#pop01 ol {
+  margin-block: 1rem;
+  padding-inline-start: 1.25rem; /*litt intrykk på lister*/
+}
+
+#pop01 li {
+  margin-block: 0.4rem; /*litt luft mellom listepunktene*/
+}
+
+details [open] div {
+  padding: 20px 0 0 0;
+}
+
+/*details [open]*/
